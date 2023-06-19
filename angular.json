@@ -1,14 +1,17 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "d6223d3b-4506-4a35-bada-b5d87a922b73"
+    "analytics": "e3ed9d9f-bb6a-47c1-a9f8-89da4e01ce78"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "feira-livre": {
+    "feira-livreFront": {
       "projectType": "application",
       "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        },
         "@schematics/angular:application": {
           "strict": true
         }
@@ -20,17 +23,21 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/feira-livre",
+            "outputPath": "dist/feira-livreFront",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/primeng/resources/themes/saga-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/primeicons/primeicons.css",
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -71,10 +78,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "feira-livre:build:production"
+              "browserTarget": "feira-livreFront:build:production"
             },
             "development": {
-              "browserTarget": "feira-livre:build:development"
+              "browserTarget": "feira-livreFront:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +89,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "feira-livre:build"
+            "browserTarget": "feira-livreFront:build"
           }
         },
         "test": {
@@ -92,12 +99,13 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
+            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }
@@ -105,5 +113,5 @@
       }
     }
   },
-  "defaultProject": "feira-livre"
+  "defaultProject": "feira-livreFront"
 }

@@ -1,12 +1,12 @@
 @import "../../../assets/css/variables";
 
-
-.cards-description {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+.under-background {
+  margin-top: 0px;
+  position: relative;
+  z-index: 991;
+  background-color: $main-color-font;
+  height: 100%;
+  padding-top: 10%;
 }
 
 .background-banner {
@@ -18,7 +18,6 @@
   background-position: center;
   background-attachment: fixed;
   z-index: 0;
-  padding-top: 10%;
 
 }
 
@@ -41,6 +40,16 @@
   color: $sec-color-font;
 }
 
+#section-menber {
+  .position-title-opor {
+    margin: 0 0 0 auto;
+  }
+}
+
+.picturesAboutUs {
+  overflow: hidden;
+}
+
 .position-title-opor {
   width: 650px;
   max-width: 100%;
@@ -52,6 +61,10 @@
 
 .position-cards {
   margin-top: 60px;
+}
+
+section {
+  margin: 30px 20px 60px 20px;
 }
 
 .column_oppor {
@@ -69,6 +82,7 @@
   display: table;
   clear: both;
 }
+
 
 .title-inside-oppor {
   font-size: 1.5rem;
@@ -92,4 +106,169 @@
 
 .positon-img-about, .position-inside-s-3, .position-logo-center, .navbar-footer {
   width: 50%;
+}
+
+.card-team {
+  text-align: left;
+  padding: 11px 12px;
+  margin: 0 10px;
+  margin-bottom: 30px;
+  margin-top: 5px;
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.card-team:hover {
+transition: 0.5s ease;
+-webkit-transition: 0.5s ease;
+-moz-transition: 0.5s ease;
+-ms-transition: 0.5s ease;
+-o-transition: 0.5s ease;
+transform: scale(1.05);
+-webkit-transform: scale(1.05);
+-moz-transform: scale(1.05);
+-ms-transform: scale(1.05);
+-o-transform: scale(1.05);
+}
+
+.positon-img-team {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.img-team {
+width: 100%;
+height: 100%;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-ms-border-radius: 5px;
+-o-border-radius: 5px;
+}
+
+.name-team  {
+  font-size: 0.938rem;
+  font-weight: 700;
+  color: #15254A;
+}
+
+.name-team:hover {
+color: #15254A;
+}
+
+.occupation-team {
+  font-weight: 300;
+  font-size: 0.688rem;
+  color: #15254A;
+  margin-left: -2px;
+}
+
+.city-team {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #15254A;
+}
+
+.icon-about-team {
+min-width: 25px;
+font-size: 0.813rem;
+color: #1C72A6;
+}
+
+.name-team, .occupation-team {
+margin-block-end: 5px;
+}
+
+.city-team {
+margin-block-end: 0;
+}
+
+
+.position-title-benefit {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.title-benefit {
+  font-size: 40px;
+  font-weight: 700;
+  color: $dark-color;
+}
+
+.position-description-testimony {
+  text-align: center;
+}
+
+.description-testimony {
+  font-size: 18px;
+  color: #80788B;
+  font-family: 'Rubik', sans-serif;
+}
+
+.content-testimony {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 35px 0px;
+  text-align: center;
+}
+
+.position-img-marks {
+  margin-bottom: 30px;
+}
+
+.img-marks {
+  width: 30px;
+  height: 30px;
+}
+
+.position-testimony {
+  max-width: 345px;
+}
+
+.testimony {
+  font-size: 18px;
+  color: #aaa5b3;
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+}
+
+.position-img-testimony {
+  margin: 30px 0px;
+}
+
+.img-testimony {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.name-testimony {
+  font-size: 18px;
+  font-weight: bold;
+  color: $btn-action-edit;
+}
+
+.work-testimony {
+  font-size: 16px;
+  color: #77747c;
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+}
+
+#section-location {
+  margin: 50px 0px;
+  .position-title-opor {
+    margin-left: 30px;
+  }
 }

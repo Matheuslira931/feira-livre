@@ -1,15 +1,26 @@
 <div class="position-header">
   <div class="left-area">
-    <a href="/"><img class="logo_navbar" src="/assets/imagens/logo-indian.jpg" /></a>
+    <a href="/"><img class="logo_navbar" src="/assets/imagens/logo-prefeitura.png" /></a>
   </div>
   <div class="right-area">
-    <div class="alination" *ngIf="!user">
-      <app-button-background editStyle="backgroundHalf space-btn" (click)="modalLogin()" content="logar"></app-button-background>
-      <app-button-background editStyle="backgroundFull" (click)="modalSign()" content="Registrar"></app-button-background>
-    </div>
-    <div class="alination" *ngIf="user">
-      <a class="nav-link nameUser" href="home">{{user.name}}</a>
-      <app-button-background editStyle="backgroundFull btn-back" (click)="logout()" content="Logout"></app-button-background>
+    <div class="alination">
+      <ul class="navbar-nav alination">
+        <li class="nav-item">
+            <a class="nav-link" href="/">Inicio</a>
+        </li>
+        <li class="nav-item" href="/">
+            <a class="nav-link" href="#section-prod">Produtos</a>
+        </li>
+        <li class="nav-item" href="/">
+            <a class="nav-link" href="#section-menber">Feirantes</a>
+        </li>
+        <li class="nav-item" href="/">
+          <a class="nav-link" href="#section-depoi">Depoimentos</a>
+        </li>
+        <li class="nav-item" href="/">
+            <a class="nav-link" href="#section-location">Localização</a>
+        </li>
+      </ul>
     </div>
   </div>
 </div>

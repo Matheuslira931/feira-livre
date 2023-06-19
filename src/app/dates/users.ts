@@ -4,19 +4,19 @@ export const Users:any = {
   {
     id: 1,
     name: "joão",
-    email: "joao@idun.com",
+    email: "joao@feira-livre.com",
     password: "teste",
   },
   {
     id: 2,
     name: "lucas",
-    email: "lucas@idun.com",
+    email: "lucas@feira-livre.com",
     password: "teste"
   },
   {
     id: 3,
     name: "matheus",
-    email: "matheus@idun.com",
+    email: "matheus@feira-livre.com",
     password: "teste"
   }
 ]};

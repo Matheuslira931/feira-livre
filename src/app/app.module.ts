@@ -1,25 +1,20 @@
 import { HttpClientModule } from '@angular/common/http';
-import { GlobalService } from './core/services/global.service';
-import { FormsModule } from '@angular/forms';
-import { DynamicDialogModule } from 'primeng/dynamicdialog';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DashboardModule } from './dashboard/dashboard.module';
-import { SiteModule } from './site/site.module';
-import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GlobalService } from './core/services/global.service';
+import { SiteModule } from './site/site.module';
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
     SiteModule,
-    DashboardModule,
     BrowserModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
